@@ -1,4 +1,4 @@
-# Brackets Bootstrap Snippets#
+# Bootstrap4 Snippets - Brackets Extension#
 
 A [Brackets](http://brackets.io/) extension to add Bootstrap 4 `v4.0.0-alpha.2` snippets to your page using simple shortcut keys.
 
@@ -17,3 +17,5 @@ This will make the relevant snippets at cursor location.
 
 ## License ##
 [MIT License](LICENSE)
+
+** A special thanks to [codeomnitrix](https://github.com/codeomnitrix/) for the inspiration and starter code for this project!
