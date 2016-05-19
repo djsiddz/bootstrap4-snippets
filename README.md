@@ -12,11 +12,7 @@ A [Brackets](http://brackets.io/) extension to add Bootstrap 4 `v4.0.0-alpha.2` 
 2. Download straight from GitHub using [this link](https://github.com/djsiddz/bootstrap4-snippets/archive/master.zip)
 
 ## Directions ##
-* Ctrl-Shift-N > Create a Navigation toolbar
-* Ctrl-Shift-P > Create a Panel
-* Ctrl-Shift-M > Create a Modal
-* Ctrl-Shift-I > Create an input group
-* **Debating if I should keep these intact and extend more snippets.**
+* Check [this issue](https://github.com/djsiddz/bootstrap4-snippets/issues/1) for current direction of the extension.
 
 This will make the relevant snippets at cursor location.
 
