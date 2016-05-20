@@ -1,10 +1,10 @@
 {
-  "name": "codeomnitrix.bootstrap-snippets",
-  "title": "Bootstrap 3 Snippets",
-  "description": "Add Bootstrap 3 HTML5 Snippets to your page by hitting Ctrl-Shift keys with designated snippets eg. P for panel etc.",
-  "homepage": "https://github.com/codeomnitrix/bootstrap-snippets",
-  "version": "0.1.0",
-  "author": "Vinit Tiwari (https://github.com/codeomnitrix)",
+  "name": "djsiddz.bootstrap4-snippets",
+  "title": "Bootstrap4 Snippets",
+  "description": "Add Bootstrap v4.0.0-alpha2 HTML5 Snippets to your page by hitting Ctrl-Shift keys with designated snippets eg. N for navbar etc.",
+  "homepage": "https://github.com/djsiddz/bootstrap4-snippets",
+  "version": "0.0.1",
+  "author": "Siddhesh Thadeshwar (https://github.com/djsiddz)",
   "license": "MIT",
   "engines": {
     "brackets": ">=0.37.0"
@@ -12,6 +12,7 @@
   "keywords": [
     "Bootstrap",
     "Bootstrap 3",
+    "Bootstrap 4",
     "Bootstrap Snippets",
     "Snippets",
     "HTML",
