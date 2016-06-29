@@ -32,6 +32,9 @@ A [Brackets](http://brackets.io/) extension to add Bootstrap 4 `v4.0.0-alpha.2` 
 
 This will make the relevant snippets at cursor location.
 
+## v0.0.1 ##
+Release expected for June 30, 2016
+
 ## License ##
 [MIT License](LICENSE)
 
