@@ -105,7 +105,32 @@ define(function (require, exports, module) {
 	}
 	//append a custom contact form to the current editor
 	function appendContactForm() {
-		var snippet = 'NOT READY YET';
+		var snippet = '<form>'+
+		'	<fieldset class="form-group">\n'+
+		'		<label for="fullname1">Full Name</label>\n'+
+		'		<input type="text" class="form-control" id="fullname1" placeholder="First-name Last-name">\n'+
+		'	</fieldset>\n'+
+		'	<fieldset class="form-group">\n'+
+		'		<label for="email1">Email address</label>\n'+
+		'		<input type="email" class="form-control" id="email1" placeholder="Enter email">\n'+
+		'		<small class="text-muted">We\'ll never share your email with anyone else.</small>\n'+
+		'	</fieldset>\n'+
+		'	<fieldset class="form-group">\n'+
+		'		<label for="service1">Select a service</label>\n'+
+		'		<select class="form-control" id="service1">\n'+
+		'			<option>Web Design & Development</option>\n'+
+		'			<option>Domain and Hosting</option>\n'+
+		'			<option>Web Application</option>\n'+
+		'			<option>Mobile Application</option>\n'+
+		'			<option>WordPress Support</option>\n'+
+		'		</select>\n'+
+		'	</fieldset>\n'+
+		'	<fieldset class="form-group">\n'+
+		'		<label for="message1">Your Message</label>\n'+
+		'		<textarea class="form-control" id="message1" rows="3"></textarea>\n'+
+		'	</fieldset>\n'+
+		'	<button type="submit" class="btn btn-primary">Submit</button>\n'+
+		'</form>';
 
 		var editor = edManager.getCurrentFullEditor();
 		if(editor){
@@ -131,7 +156,7 @@ define(function (require, exports, module) {
 	//append a default card with image and button to the current editor
 	function appendDefaultCard() {
 		var snippet = '<div class="card">\n'+
-		'	<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'	<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'	<div class="card-block">\n'+
 		'		<h4 class="card-title">Card title</h4>\n'+
 		'		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>\n'+
@@ -164,7 +189,7 @@ define(function (require, exports, module) {
 	function appendCardGroup() {
 		var snippet = '<div class="card-group">\n'+
 		'	<div class="card">\n'+
-		'		<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'		<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'		<div class="card-block">\n'+
 		'			<h4 class="card-title">Card title</h4>\n'+
 		'			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n'+
@@ -172,7 +197,7 @@ define(function (require, exports, module) {
 		'		</div>\n'+
 		'	</div>\n'+
 		'	<div class="card">\n'+
-		'		<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'		<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'		<div class="card-block">\n'+
 		'			<h4 class="card-title">Card title</h4>\n'+
 		'			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>\n'+
@@ -180,7 +205,7 @@ define(function (require, exports, module) {
 		'		</div>\n'+
 		'	</div>\n'+
 		'	<div class="card">\n'+
-		'		<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'		<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'		<div class="card-block">\n'+
 		'			<h4 class="card-title">Card title</h4>\n'+
 		'			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>\n'+
@@ -200,7 +225,7 @@ define(function (require, exports, module) {
 		var snippet = '<div class="card-deck-wrapper">\n'+
 		'	<div class="card-deck">\n'+
 		'		<div class="card">\n'+
-		'			<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'			<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'			<div class="card-block">\n'+
 		'				<h4 class="card-title">Card title</h4>\n'+
 		'				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n'+
@@ -208,7 +233,7 @@ define(function (require, exports, module) {
 		'			</div>\n'+
 		'		</div>\n'+
 		'		<div class="card">\n'+
-		'			<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'			<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'			<div class="card-block">\n'+
 		'				<h4 class="card-title">Card title</h4>\n'+
 		'				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>\n'+
@@ -216,7 +241,7 @@ define(function (require, exports, module) {
 		'			</div>\n'+
 		'		</div>\n'+
 		'		<div class="card">\n'+
-		'			<img class="card-img-top" data-src="..." alt="Card image cap">\n'+
+		'			<img class="card-img-top" src="..." alt="Card image cap">\n'+
 		'			<div class="card-block">\n'+
 		'				<h4 class="card-title">Card title</h4>\n'+
 		'				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>\n'+
@@ -345,13 +370,13 @@ define(function (require, exports, module) {
 		'	</ol>\n'+
 		'	<div class="carousel-inner" role="listbox">\n'+
 		'		<div class="carousel-item active">\n'+
-		'			<img data-src="..." alt="First slide">\n'+
+		'			<img src="..." alt="First slide">\n'+
 		'		</div>\n'+
 		'		<div class="carousel-item">\n'+
-		'			<img data-src="..." alt="Second slide">\n'+
+		'			<img src="..." alt="Second slide">\n'+
 		'		</div>\n'+
 		'		<div class="carousel-item">\n'+
-		'			<img data-src="..." alt="Third slide">\n'+
+		'			<img src="..." alt="Third slide">\n'+
 		'		</div>\n'+
 		'	</div>\n'+
 		'	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n'+
