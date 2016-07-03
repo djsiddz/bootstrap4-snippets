@@ -4,7 +4,6 @@
 define(function (require, exports, module) {
 	"use strict";
 	var keyBoardShortCutHelp = "Ctrl-`";
-	var keyBoardShortCutContainer = "Ctrl-Shift-B";
 	var keyBoardShortCutContainerFluid = "Ctrl-Shift-U";
 	var keyBoardShortCutThreeCols = "Ctrl-Shift-E";
 	var keyBoardShortCutTable = "Ctrl-Shift-T";
@@ -23,23 +22,6 @@ define(function (require, exports, module) {
 	var kbManager = brackets.getModule("command/KeyBindingManager");
 	var edManager = brackets.getModule("editor/EditorManager");
 
-	//append a container to current editor
-	function appendContainer(){
-		var snippet = '<div class="container">\n'+
-		'	<div class="row">\n'+
-		'		<div class="col-xs-6">\n'+
-		'		</div>\n'+
-		'		<div class="col-xs-6">\n'+
-		'		</div>\n'+
-		'	</div>\n'+
-		'</div>';
-
-		var editor = edManager.getCurrentFullEditor();
-		if(editor){
-			var insertionPos = editor.getCursorPos();
-			editor.document.replaceRange(snippet, insertionPos);
-		}
-	}
 	//append a container-fluid to the current editor
 	function appendContainerFluid() {
 		var snippet = '<div class="container-fluid">\n'+
@@ -398,7 +380,6 @@ define(function (require, exports, module) {
 
 	function showHelp(){
 		window.alert(
-			"Ctrl-Shift-B : Container"+"\n"+
 			"Ctrl-Shift-U : Container Fluid"+"\n"+
 			"Ctrl-Shift-E : Three Columns Example"+"\n"+
 			"Ctrl-Shift-T : Basic Table"+"\n"+
@@ -417,7 +398,6 @@ define(function (require, exports, module) {
 	}
 
 	var COMMAND_ID_H = "bootstrap4snippets.help";
-	var COMMAND_ID_B = "bootstrap4snippets.getContainer";
 	var COMMAND_ID_U = "bootstrap4snippets.getContainerFluid";
 	var COMMAND_ID_E = "bootstrap4snippets.getThreeCols";
 	var COMMAND_ID_T = "bootstrap4snippets.getTable";
@@ -435,9 +415,6 @@ define(function (require, exports, module) {
 
 	CommandManager.register("Help", COMMAND_ID_H, showHelp);
 	kbManager.addBinding(COMMAND_ID_H, keyBoardShortCutHelp);
-
-	CommandManager.register("Container", COMMAND_ID_B, appendContainer);
-	kbManager.addBinding(COMMAND_ID_B, keyBoardShortCutContainer);
 
 	CommandManager.register("ContainerFluid", COMMAND_ID_U, appendContainerFluid);
 	kbManager.addBinding(COMMAND_ID_U, keyBoardShortCutContainerFluid);
