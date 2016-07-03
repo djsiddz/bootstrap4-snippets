@@ -3,7 +3,7 @@
   "title": "Bootstrap4 Snippets",
   "description": "Add Bootstrap v4.0.0-alpha2 HTML5 Snippets to your page by hitting Ctrl-Shift keys with designated snippets eg. N for navbar etc.",
   "homepage": "https://github.com/djsiddz/bootstrap4-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Siddhesh Thadeshwar (https://github.com/djsiddz)",
   "license": "MIT",
   "engines": {
