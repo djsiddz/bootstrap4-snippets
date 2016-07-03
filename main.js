@@ -7,9 +7,9 @@ define(function (require, exports, module) {
 	var keyBoardShortCutContainerFluid = "Ctrl-Shift-U";
 	var keyBoardShortCutThreeCols = "Ctrl-Shift-E";
 	var keyBoardShortCutTable = "Ctrl-Shift-T";
-	var keyBoardShortCutContactForm = "Ctrl-Shift-R";
+	var keyBoardShortCutContactForm = "Ctrl-Shift-X";
 	var keyBoardShortCutJumbotron = "Ctrl-Shift-J";
-	var keyBoardShortCutDefaultCard = "Ctrl-Shift-C";
+	var keyBoardShortCutDefaultCard = "Ctrl-Shift-Y";
 	var keyBoardShortCutCardWoImage = "Ctrl-Shift-I";
 	var keyBoardShortCutCardGroup = "Ctrl-Shift-G";
 	var keyBoardShortCutCardDeck = "Ctrl-Shift-K";
@@ -383,9 +383,9 @@ define(function (require, exports, module) {
 			"Ctrl-Shift-U : Container Fluid"+"\n"+
 			"Ctrl-Shift-E : Three Columns Example"+"\n"+
 			"Ctrl-Shift-T : Basic Table"+"\n"+
-			"Ctrl-Shift-R : Custom Contact Form"+"\n"+
+			"Ctrl-Shift-X : Custom Contact Form"+"\n"+
 			"Ctrl-Shift-J : Jumbotron"+"\n"+
-			"Ctrl-Shift-C : Default Card"+"\n"+
+			"Ctrl-Shift-Y : Default Card"+"\n"+
 			"Ctrl-Shift-I : Card without Image"+"\n"+
 			"Ctrl-Shift-G : Card Group"+"\n"+
 			"Ctrl-Shift-K : Card Deck"+"\n"+
@@ -401,9 +401,9 @@ define(function (require, exports, module) {
 	var COMMAND_ID_U = "bootstrap4snippets.getContainerFluid";
 	var COMMAND_ID_E = "bootstrap4snippets.getThreeCols";
 	var COMMAND_ID_T = "bootstrap4snippets.getTable";
-	var COMMAND_ID_R = "bootstrap4snippets.getContactForm";
+	var COMMAND_ID_X = "bootstrap4snippets.getContactForm";
 	var COMMAND_ID_J = "bootstrap4snippets.getJumbotron";
-	var COMMAND_ID_C = "bootstrap4snippets.getDefaultCard";
+	var COMMAND_ID_Y = "bootstrap4snippets.getDefaultCard";
 	var COMMAND_ID_I = "bootstrap4snippets.getCardWoImage";
 	var COMMAND_ID_G = "bootstrap4snippets.getCardGroup";
 	var COMMAND_ID_K = "bootstrap4snippets.getCardDeck";
@@ -425,14 +425,14 @@ define(function (require, exports, module) {
 	CommandManager.register("Table", COMMAND_ID_T, appendTable);
 	kbManager.addBinding(COMMAND_ID_T, keyBoardShortCutTable);
 
-	CommandManager.register("ContactForm", COMMAND_ID_R, appendContactForm);
-	kbManager.addBinding(COMMAND_ID_R, keyBoardShortCutContactForm);
+	CommandManager.register("ContactForm", COMMAND_ID_X, appendContactForm);
+	kbManager.addBinding(COMMAND_ID_X, keyBoardShortCutContactForm);
 
 	CommandManager.register("Jumbotron", COMMAND_ID_J, appendJumbotron);
 	kbManager.addBinding(COMMAND_ID_J, keyBoardShortCutJumbotron);
 
-	CommandManager.register("DefaultCard", COMMAND_ID_C, appendDefaultCard);
-	kbManager.addBinding(COMMAND_ID_C, keyBoardShortCutDefaultCard);
+	CommandManager.register("DefaultCard", COMMAND_ID_Y, appendDefaultCard);
+	kbManager.addBinding(COMMAND_ID_Y, keyBoardShortCutDefaultCard);
 
 	CommandManager.register("CardWoImage", COMMAND_ID_I, appendCardWoImage);
 	kbManager.addBinding(COMMAND_ID_I, keyBoardShortCutCardWoImage);
