@@ -398,21 +398,21 @@ define(function (require, exports, module) {
 
 	function showHelp(){
 		window.alert(
-			"Ctrl-Alt-B : Container"+"\n"+
-			"Ctrl-Alt-U : Container Fluid"+"\n"+
-			"Ctrl-Alt-E : Three Columns Example"+"\n"+
-			"Ctrl-Alt-T : Basic Table"+"\n"+
-			"Ctrl-Alt-R : Custom Contact Form"+"\n"+
-			"Ctrl-Alt-J : Jumbotron"+"\n"+
-			"Ctrl-Alt-C : Default Card"+"\n"+
-			"Ctrl-Alt-I : Card without Image"+"\n"+
-			"Ctrl-Alt-G : Card Group"+"\n"+
-			"Ctrl-Alt-K : Card Deck"+"\n"+
-			"Ctrl-Alt-N : Navbar"+"\n"+
-			"Ctrl-Alt-P : Pagination"+"\n"+
-			"Ctrl-Alt-A : Pager Aligned"+"\n"+
-			"Ctrl-Alt-M : Modal"+"\n"+
-			"Ctrl-Alt-L : Carousel"
+			"Ctrl-Shift-B : Container"+"\n"+
+			"Ctrl-Shift-U : Container Fluid"+"\n"+
+			"Ctrl-Shift-E : Three Columns Example"+"\n"+
+			"Ctrl-Shift-T : Basic Table"+"\n"+
+			"Ctrl-Shift-R : Custom Contact Form"+"\n"+
+			"Ctrl-Shift-J : Jumbotron"+"\n"+
+			"Ctrl-Shift-C : Default Card"+"\n"+
+			"Ctrl-Shift-I : Card without Image"+"\n"+
+			"Ctrl-Shift-G : Card Group"+"\n"+
+			"Ctrl-Shift-K : Card Deck"+"\n"+
+			"Ctrl-Shift-N : Navbar"+"\n"+
+			"Ctrl-Shift-P : Pagination"+"\n"+
+			"Ctrl-Shift-A : Pager Aligned"+"\n"+
+			"Ctrl-Shift-M : Modal"+"\n"+
+			"Ctrl-Shift-L : Carousel"
 		);
 	}
 
@@ -473,7 +473,7 @@ define(function (require, exports, module) {
 	kbManager.addBinding(COMMAND_ID_P, keyBoardShortCutPagination);
 
 	CommandManager.register("Pager", COMMAND_ID_A, appendPager);
-	kbManager.addBinding(COMMAND_ID_A, keyBoardShortCutContainer);
+	kbManager.addBinding(COMMAND_ID_A, keyBoardShortCutPagerAligned);
 
 	CommandManager.register("Modal", COMMAND_ID_M, appendModal);
 	kbManager.addBinding(COMMAND_ID_M, keyBoardShortCutModal);
