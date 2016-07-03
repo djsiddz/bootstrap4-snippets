@@ -17,7 +17,7 @@ define(function (require, exports, module) {
 	var keyBoardShortCutPagination = "Ctrl-Shift-P";
 	var keyBoardShortCutPagerAligned = "Ctrl-Shift-A";
 	var keyBoardShortCutModal = "Ctrl-Shift-M";
-	var keyBoardShortCutCarousel = "Ctrl-Shift-0";
+	var keyBoardShortCutCarousel = "Ctrl-Shift-Q";
 	var CommandManager = brackets.getModule("command/CommandManager");
 	var kbManager = brackets.getModule("command/KeyBindingManager");
 	var edManager = brackets.getModule("editor/EditorManager");
@@ -393,7 +393,7 @@ define(function (require, exports, module) {
 			"Ctrl-Shift-P : Pagination"+"\n"+
 			"Ctrl-Shift-A : Pager Aligned"+"\n"+
 			"Ctrl-Shift-M : Modal"+"\n"+
-			"Ctrl-Shift-1 : Carousel"
+			"Ctrl-Shift-Q : Carousel"
 		);
 	}
 
@@ -411,7 +411,7 @@ define(function (require, exports, module) {
 	var COMMAND_ID_P = "bootstrap4snippets.getPagination";
 	var COMMAND_ID_A = "bootstrap4snippets.getPager";
 	var COMMAND_ID_M = "bootstrap4snippets.getModal";
-	var COMMAND_ID_0 = "bootstrap4snippets.getCarousel";
+	var COMMAND_ID_Q = "bootstrap4snippets.getCarousel";
 
 	CommandManager.register("Help", COMMAND_ID_H, showHelp);
 	kbManager.addBinding(COMMAND_ID_H, keyBoardShortCutHelp);
@@ -455,6 +455,6 @@ define(function (require, exports, module) {
 	CommandManager.register("Modal", COMMAND_ID_M, appendModal);
 	kbManager.addBinding(COMMAND_ID_M, keyBoardShortCutModal);
 
-	CommandManager.register("Carousel", COMMAND_ID_0, appendCarousel);
-	kbManager.addBinding(COMMAND_ID_0, keyBoardShortCutCarousel);
+	CommandManager.register("Carousel", COMMAND_ID_Q, appendCarousel);
+	kbManager.addBinding(COMMAND_ID_Q, keyBoardShortCutCarousel);
 });
