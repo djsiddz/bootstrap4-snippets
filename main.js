@@ -317,7 +317,7 @@ define(function (require, exports, module) {
 	}
 	//append a modal to the current editor
 	function appendModal() {
-		var snippet = '<div class="modal fade">\n'+
+		var snippet = '<div class="modal fade" id="myModal" name="myModal">\n'+
 		'	<div class="modal-dialog" role="document">\n'+
 		'		<div class="modal-content">\n'+
 		'			<div class="modal-header">\n'+
